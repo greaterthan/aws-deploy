@@ -4,6 +4,7 @@
 * Download cobudget ot the AWS server
 * Check which port Puma is using when in production mode
 * Set nginx to redirect to puma
+* Save /etc/nginx/nginx.conf and the custom site file
 
 ## SSH config
 
