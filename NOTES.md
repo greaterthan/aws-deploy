@@ -32,8 +32,8 @@ To connect using psql: `psql -h cobudget1.cnxbxtmxjlog.eu-west-1.rds.amazonaws.c
 
 ### To load a clean database with data dumped from pg_dump
 
-`psql -h cobudget1.cnxbxtmxjlog.eu-west-1.rds.amazonaws.com -U chime -d cobudget < _file_from_previous_pg_dump_`
+`psql -h cobudget1.cnxbxtmxjlog.eu-west-1.rds.amazonaws.com -U chime -d cobudget < <file_from_previous_pg_dump>`
 
 ## References
 * [Confuguring Ruby on Rails](http://guides.rubyonrails.org/configuring.html)
-* [Deploy Ruby On Rails on Ubuntu 16.04 Xenial Xerus - GoRails](https://gorails.com/deploy/ubuntu/16.04))
+* [Deploy Ruby On Rails on Ubuntu 16.04 Xenial Xerus - GoRails](https://gorails.com/deploy/ubuntu/16.04)
