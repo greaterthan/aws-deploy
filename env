@@ -1,4 +1,6 @@
 # Run with `. ./env`
 
-export DATABASE_URL="postgres://cobudget1.cnxbxtmxjlog.eu-west-1.rds.amazonaws.com:5432/cobudget"
+export DATABASE_URL="postgres://chime:<password>@cobudget1.cnxbxtmxjlog.eu-west-1.rds.amazonaws.com:5432/cobudget"
 export RAILS_ENV=production
+export RACK_ENV=production
+export SECRET_KEY_BASE=<well this is actually a secret>
