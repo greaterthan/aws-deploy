@@ -1,8 +1,7 @@
 # Notes
 
 ## TODO
-* Set nginx to redirect to puma on port 3000
-* Save /etc/nginx/nginx.conf and the custom site file
+* Load the frontend on the site as well
 
 ## SSH config
 
