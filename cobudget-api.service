@@ -4,11 +4,9 @@ After=network.target postgresql.service
 
 [Service]
 Type=simple
-User=ubuntu
-Group=ubuntu
 WorkingDirectory=/opt/cobudget-api/current
 EnvironmentFile=/opt/cobudget-api/current/env-vars
-ExecStart=/bin/bash -lc '/home/ubuntu/.rbenv/versions/2.4.0/bin/ruby bin/rails s'
+ExecStart=/usr/local/lib/ruby-2.4.0/bin/rails s
 Restart=always
 
 [Install]
