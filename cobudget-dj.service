@@ -1,0 +1,15 @@
+[Unit]
+Description=Cobudget Delayed Job service
+After=network.target postgresql.service
+BindsTo=cobudget-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/cobudget-api/current
+EnvironmentFile=/opt/cobudget-api/current/env-vars
+ExecStart=/usr/local/lib/ruby-2.4.0/bin/rake jobs:work 
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
