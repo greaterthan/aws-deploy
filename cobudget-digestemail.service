@@ -1,0 +1,12 @@
+[Unit]
+Description=Cobudget Digest Email Service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/cobudget-api/current
+EnvironmentFile=/opt/cobudget-api/current/env-vars
+ExecStart=/usr/local/lib/ruby-2.4.0/bin/rake cobudget:deliver_recent_activity_emails
+
+[Install]
+WantedBy=multi-user.target
+

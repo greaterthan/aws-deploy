@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Cobudget Digest Email Service every hour
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=1800
+Persistent=true
+
+[Install]
+WantedBy=timer.target
+
